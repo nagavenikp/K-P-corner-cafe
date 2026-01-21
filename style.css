@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f7f3e9;
+    color: #3e2723;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.page-section {
+    padding: 40px 60px;
+    background: #fff;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    border-left: 6px solid #c7a17a;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.menu-item {
+    background: #f8efe3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   /* 2 photos per row */
+    gap: 25px;                               /* spacing between photos */
+    width: 100%;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;        /* fixed height so all images match */
+    object-fit: cover;    /* crop images to same size */
+    border-radius: 12px;
+}
+
+
+
+/* Navigation */
+nav {
+    background: #3e2723;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #f8efe3;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #c7a17a;
+}
+
+/* Cart Icon */
+#cart-icon {
+    font-size: 20px;
+    color: #f8efe3;
+    cursor: pointer;
+}
+
+#cart-count {
+    background: #c7a17a;
+    color: #3e2723;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+/* ---------------- CART PAGE SECTION ---------------- */
+
+#cart-page {
+    padding: 40px 60px;
+    background: #fff;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+#cart-list {
+    padding: 0;
+}
+
+#cart-list li {
+    list-style: none;
+    background: #f8efe3;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#cart-page h3 {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #3e2723;
+    color: #fff;
+    margin-top: 40px;
+}
+
+#responseMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}

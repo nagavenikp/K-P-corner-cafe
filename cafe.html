@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner Café Business Portfolio</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    /* Internal CSS example */
+    #feedbackForm button {
+        background-color: #3e2723;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #feedbackForm button:hover {
+        background-color: #c7a17a;
+        color: #3e2723;
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Corner Café</h1>
+    <p>"Your neighborhood spot for great coffee & cozy vibes"</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#cart-page">Cart</a></li> 
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+    </ul>
+
+    <!-- Move the cart count here -->
+    <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+</nav>
+
+    <section class="page-section" id="about">
+    <h2>About</h2>
+
+    <p>
+        Corner Café, owned by <strong>Nagaveni K P</strong>, is a cozy community café offering premium coffee,
+        fresh food, and a warm atmosphere. Located at
+        <strong>5th Cross, Hiriyur, Chitradurga</strong>.
+    </p>
+</section>
+
+
+
+<section class="page-section" id="gallery">
+    <h2>Visual Gallery</h2>
+<div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd">
+    <img src="images/Screenshot 2026-01-01 195048.png">
+</div>
+    
+</section>
+
+
+    <section class="page-section" id="menu">
+    <h2>Café Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <img src="images/nathan-dumlao-zUNs99PGDg0-unsplash.jpg">
+            <p><strong>Signature Latte</strong><br>₹160</p>
+            <button class="add-btn" data-name="Signature Latte" data-price="160">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/wu-yi-mk7zhx5lFbc-unsplash.jpg">
+            <p><strong>Cappuccino</strong><br>₹150</p>
+            <button class="add-btn" data-name="Cappuccino" data-price="150">Add to cart </button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81">
+            <p><strong>Waffle</strong><br>₹140</p>
+            <button class="add-btn" data-name="Waffle" data-price="140">Add to cart </button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/Screenshot 2025-12-17 235504.png">
+            <p><strong>Espresso</strong><br>₹100</p>
+             <button class="add-btn" data-name="Espresso" data-price="100">Add to Cart</button>
+        </div>
+
+        <div class="menu-item"> <img src="images/koushik-pal-C_vE8ZIHJ3Y-unsplash.jpg">
+         <p><strong>Mocha</strong><br>₹170</p>
+         <button class="add-btn" data-name="Mocha" data-price="170">Add to Cart</button>
+         </div>
+         
+        <div class="menu-item"> <img src="images/giancarlo-duarte-RtHw0PWCLhw-unsplash.jpg">
+             <p><strong>Hot Chocolate</strong><br>₹130</p> 
+             <button class="add-btn" data-name="Hot Chocolate" data-price="130">Add to Cart</button>
+            </div>
+             
+        <div class="menu-item"> <img src="images/laark-boshoff-9T5FvfnmH_k-unsplash.jpg">
+                 <p><strong>Green Tea</strong><br>₹90</p>
+                  <button class="add-btn" data-name="Green Tea" data-price="90">Add to Cart</button>
+                 </div>   
+
+        <div class="menu-item"> <img src="images/blackieshoot-hlgKiC9t4N8-unsplash.jpg">
+             <p><strong>Masala Chai</strong><br>₹60</p>
+             <button class="add-btn" data-name="Masala Chai" data-price="60">Add to Cart</button>
+             </div> 
+             
+        <div class="menu-item"> <img src="images/Screenshot 2025-12-11 153618.png"> 
+                <p><strong>Sizzling Brownie</strong><br>₹110</p>
+             <button class="add-btn" data-name="Sizzling Brownie" data-price="110">Add to Cart</button>
+             </div>
+                
+        <div class="menu-item"> <img src="images/ilya-mashkov-_qxbJUr9RqI-unsplash.jpg">
+                     <p><strong>Veg Burger</strong><br>₹120</p> 
+                     <button class="add-btn" data-name="Veg Burger" data-price="120">Add to Cart</button>
+                    </div>
+
+        <div class="menu-item"> <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb">
+                <p><strong>Chocolate Porfait</strong><br>₹90</p> 
+             <button class="add-btn" data-name="Chocolate Porfait" data-price="90">Add to Cart</button>
+            </div>
+     
+        <div class="menu-item"> <img src="images/Screenshot 2025-12-11 150110.png">
+                  <p><strong>Garlic Bread</strong><br>₹80</p> 
+                 <button class="add-btn" data-name="Garlic Bread" data-price="80">Add to Cart</button>
+                </div> 
+         
+        <div class="menu-item"> <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9">
+             <p><strong>Chicken Burger</strong><br>₹150</p>
+             <button class="add-btn" data-name="Chicken Burger" data-price="150">Add to Cart</button>
+             </div>
+
+        <div class="menu-item"> <img src="images/tabitha-turner-F0Wd4djYvSA-unsplash.jpg"> 
+                <p><strong>Cold Coffee</strong><br>₹90</p>
+             <button class="add-btn" data-name="Cold Coffee" data-price="90">Add to Cart</button>
+             </div> 
+                
+        <div class="menu-item"> <img src="images/Screenshot 2025-12-17 230444.png">
+                     <p><strong>Chocolate Cake</strong><br>₹110</p>
+                     <button class="add-btn" data-name="Chocolate Cake" data-price="110">Add to Cart</button>
+                     </div>
+                     
+        <div class="menu-item"> <img src="https://images.unsplash.com/photo-1550547660-d9450f859349"> 
+                        <p><strong>Cheese Burger</strong><br>₹95</p> 
+                     <button class="add-btn" data-name="Cheese Burger" data-price="95">Add to Cart</button>
+                    </div>
+
+        <div class="menu-item"> <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777">
+                      <p><strong>Strawberry Smoothie</strong><br>₹160</p>
+                     <button class="add-btn" data-name="Strawberry Smoothie" data-price="160">Add to Cart</button>
+                     </div> 
+     
+        <div class="menu-item"> <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759">
+                 <p><strong>Blueberry Muffin</strong><br>₹130</p> 
+                 <button class="add-btn" data-name="Blueberry Muffin" data-price="130">Add to Cart</button>
+                </div>
+         
+        <div class="menu-item"> <img src="images/Screenshot 2025-12-11 152328.png"> 
+            <p><strong>Oreo Shake</strong><br>₹150</p> 
+         <button class="add-btn" data-name="Oreo Shake" data-price="150">Add to Cart</button>
+        </div>
+
+        <div class="menu-item"> <img src="images/Screenshot 2025-12-11 151000.png">
+                 <p><strong>Fruit Salad</strong><br>₹100</p>
+                 <button class="add-btn" data-name="Fruit Salad" data-price="100">Add to Cart</button>
+                 </div>
+    </div>
+</section>
+
+<section class="page-section" id="cart-page">
+    <h2>🛒 Your Cart</h2>
+
+    <ul id="cart-list"></ul>
+
+    <h3>Total Items: <span id="total-items">0</span></h3>
+    <h3>Total Amount: ₹<span id="total-amount">0</span></h3>
+    <h3 id="discount-msg"></h3>
+</section>
+
+
+<section class="page-section" id="feedback">
+    <h2>Customer Feedback</h2>
+
+    <form id="feedbackForm">
+        <p>
+            <label><strong>Your Name:</strong></label><br>
+            <input type="text" id="username" placeholder="Enter your name" required>
+        </p>
+
+        <p>
+            <label><strong>Your Feedback:</strong></label><br>
+            <textarea id="userFeedback" rows="4" placeholder="Write your feedback" required></textarea>
+
+        </p>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <p id="responseMessage"></p>
+</section>
+
+
+
+<section class="page-section" id="contact">
+    <h2>Contact Information</h2>
+
+    <p><strong>Owner:</strong> Nagaveni K P</p>
+    <p><strong>PhNo:</strong> 9483388555</p>
+    <p><strong>Email:</strong> contact@cornercafe.com</p>
+    <p><strong>Address:</strong> 5th Cross, Hiriyur, Chitradurga</p>
+</section>
+
+
+<footer>
+    <p>© 2025 Corner Café – Business Portfolio</p>
+</footer>
+
+<!-- JavaScript Link -->
+<script src="script.js"></script>
+</body>
+</html>
